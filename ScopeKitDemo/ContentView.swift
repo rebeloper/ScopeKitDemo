@@ -8,17 +8,42 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var observableViewModel = ObservableViewModel()
+    @StateObject private var observableObjectViewModel = ObservableObjectViewModel()
+
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            ObservableView()
+            ObservableObjectView()
+        }
+        .environment(observableViewModel)
+        .environmentObject(observableObjectViewModel)
+    }
+}
+#Preview {
+    ContentView()
+}
+
+// MARK: - @Observable
+
+struct ObservableView: View {
+    var body: some View {
+        VStack {
+            
         }
         .padding()
+        .background { Color.random() }
     }
 }
 
-#Preview {
-    ContentView()
+// MARK: - ObservableObject
+
+struct ObservableObjectView: View {
+    var body: some View {
+        VStack {
+            
+        }
+        .padding()
+        .background { Color.random() }
+    }
 }
