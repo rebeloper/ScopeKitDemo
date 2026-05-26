@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		C9B9A39E2FC6007B00C01DAC /* ScopeKit in Frameworks */ = {isa = PBXBuildFile; productRef = C9B9A39D2FC6007B00C01DAC /* ScopeKit */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		C9B9A3852FC4CF5D00C01DAC /* ScopeKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScopeKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9B9A39E2FC6007B00C01DAC /* ScopeKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +70,7 @@
 			);
 			name = ScopeKitDemo;
 			packageProductDependencies = (
+				C9B9A39D2FC6007B00C01DAC /* ScopeKit */,
 			);
 			productName = ScopeKitDemo;
 			productReference = C9B9A3852FC4CF5D00C01DAC /* ScopeKitDemo.app */;
@@ -94,6 +100,9 @@
 			);
 			mainGroup = C9B9A37C2FC4CF5D00C01DAC;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				C9B9A39C2FC6007B00C01DAC /* XCLocalSwiftPackageReference "../ScopeKit" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = C9B9A3862FC4CF5D00C01DAC /* Products */;
 			projectDirPath = "";
@@ -332,6 +341,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		C9B9A39C2FC6007B00C01DAC /* XCLocalSwiftPackageReference "../ScopeKit" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../ScopeKit;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C9B9A39D2FC6007B00C01DAC /* ScopeKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ScopeKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C9B9A37D2FC4CF5D00C01DAC /* Project object */;
 }
